@@ -41,7 +41,6 @@ function App() {
     };
 
     currentPokemon.forEach((pokemon, index) => {
-      console.log("thats 1");
       fetchDataForPokemon(pokemon.url, index);
     });
   }, [currentPokemon]);
