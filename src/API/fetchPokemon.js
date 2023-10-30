@@ -4,7 +4,6 @@ export const fetchPokemon=async()=>{
 try {
     const response= await fetch(URL)
     const {results}=await response.json(); 
-    console.log(results)
     return results
     
 } catch (error) {
@@ -12,3 +11,14 @@ try {
 }   
 }
 
+export async function fetchPokemonData(url) {
+    try {
+        const response=await fetch (url)
+        const data= await response.json();
+        return data
+    } 
+ 
+    catch (error) {
+        console.log("Single pokemon not found")  
+    }
+}
