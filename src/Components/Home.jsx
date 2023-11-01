@@ -77,7 +77,6 @@ function Home() {
   return (
     <div className="Home text-center">
       <img className="w-1/3 mx-auto" src={pokemonImg} alt="Pokemon" />
-
       {singlePokemon.map((singlePokemon, index) => (
         <div className="mt-10 bg-gray-200 w-1/4 mx-auto" key={singlePokemon.name}>
           <h1 className="text-3xl font-bold">{singlePokemon.name}</h1>
